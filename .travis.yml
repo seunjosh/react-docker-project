@@ -12,7 +12,7 @@ before_install:
 script:
   - docker run react-docker-app npm run test -- --watchAll=false
   
-delpoy: elasticbeanstalk
+deploy: elasticbeanstalk
 region: "us-east-2"  
 app: "react-app-deployment"
 env:  "Reactappdeployment-env"
