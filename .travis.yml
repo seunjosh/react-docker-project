@@ -23,6 +23,6 @@ deploy:
     branch: master
 
   access_key_id: 
-    secure: "JtZPg1UqVeGeZzbDvdnM6hlyCoAf+7EhMGFOWh4y"
-  secret_access_key: 
     secure: "AKIAZKH5SH57FS7CUK4N"
+  secret_access_key: 
+    secure: "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"
