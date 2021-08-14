@@ -12,16 +12,17 @@ before_install:
 script:
   - docker run react-docker-app npm run test -- --watchAll=false
   
-deploy: elasticbeanstalk
-region: "us-east-2"  
-app: "react-app-deployment"
-env:  "Reactappdeployment-env"
-bucket_name: "elasticbeanstalk-us-east-2-640481902462"
-bucket_path: "react-app-deployment"
-on:
-  branch: master
+deploy: 
+  provider: elasticbeanstalk
+  region: "us-east-2"  
+  app: "react-app-deployment"
+  env:  "Reactappdeployment-env"
+  bucket_name: "elasticbeanstalk-us-east-2-640481902462"
+  bucket_path: "react-app-deployment"
+  on:
+    branch: master
 
-access_key_id: 
-  secure: "Encrypted <access-key-id>= $AWS_ACCESS_KEY"
-secret_access_key: 
-  secure: "Encypted <secret-access-key>= $AWS_SECRET_KEY"
+  access_key_id: 
+    secure: "Encrypted <access-key-id>= JtZPg1UqVeGeZzbDvdnM6hlyCoAf+7EhMGFOWh4y"
+  secret_access_key: 
+    secure: "Encypted <secret-access-key>= AKIAZKH5SH57FS7CUK4N"
