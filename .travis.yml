@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 14
-sudo: required
+
 
 services:
   - docker
@@ -23,6 +23,6 @@ deploy:
     branch: master
 
   access_key_id: 
-    secure: "Encrypted <access-key-id>= JtZPg1UqVeGeZzbDvdnM6hlyCoAf+7EhMGFOWh4y"
+    secure: "JtZPg1UqVeGeZzbDvdnM6hlyCoAf+7EhMGFOWh4y"
   secret_access_key: 
-    secure: "Encypted <secret-access-key>= AKIAZKH5SH57FS7CUK4N"
+    secure: "AKIAZKH5SH57FS7CUK4N"
